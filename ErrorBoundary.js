@@ -10,7 +10,7 @@ class ErrorBoundary extends Component {
     return { hasError: true };
   }
   componentDidCatch(error, info) {
-    console.error("ErrorBoundary caught an error", error, info);
+    console.error("ErrorBoundary caught an error", error, info); //eslint-disable-line no-console
   }
   componentDidUpdate() {
     if (this.state.hasError) {
