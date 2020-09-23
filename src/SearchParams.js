@@ -45,10 +45,10 @@ const SearchParams = () => {
             placeholder="location"
             onChange={e => setLocation(e.target.value)}
           />
-          <button type="submit">Submit</button>
         </label>
         <AnimalDropdown />
         <BreedDropdown />
+        <button type="submit">Search</button>
       </form>
       <Results pets={pets} />
     </div>
