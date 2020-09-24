@@ -10,7 +10,7 @@
   - using Node for server side rendering 
   - using Redux
   - using Emotion for CSS in JS
-  - using TypeScript to introduce type checking
+  - using TypeScript to introduce type checking (on master)
   - using Jest for testing
   
 ## Built with
