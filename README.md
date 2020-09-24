@@ -5,15 +5,26 @@
 
 ## About
 
-A SPA built from the ground up with React, which is used to search for pets of all kinds that are available for adoption.
-
+- A SPA built from the ground up with React, which is used to search for pets of all kinds that are available for adoption.
+- The various branches cover different techniques, such as:
+  - using Node for server side rendering 
+  - using Redux
+  - using Emotion for CSS in JS
+  - using TypeScript to introduce type checking
+  - using Jest for testing
+  
 ## Built with
 
 - React
 - Reach router
 - Parcel
-- ESlint
 - Babel
+- Redux
+- Jest
+- TypeScript
+- ESlint
+- TSlint
+- Emotion
 
 ## Setup
 
