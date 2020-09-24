@@ -3,6 +3,7 @@ import pet, { ANIMALS } from "@frontendmasters/pet";
 import useDropdown from "./useDropdown";
 import Results from "./Results";
 import ThemeContext from "./ThemeContext";
+// import {themeHook} from './App'
 
 const SearchParams = () => {
   const [location, setLocation] = useState("Seattle, WA");
@@ -33,6 +34,7 @@ const SearchParams = () => {
   return (
     <div className="search-params">
       <form
+        style={{ backgroundColor: theme }}
         onSubmit={e => {
           e.preventDefault();
           requestPets();
@@ -57,15 +59,13 @@ const SearchParams = () => {
             onChange={e => setTheme(e.target.value)}
             onBlur={e => setTheme(e.target.value)}
           >
-            <option value="peru">peru</option>
+            <option value="slategray">slategray</option>
             <option value="darkgoldenrod">darkgoldenrod</option>
-            <option value="fuchsia">fuchsia</option>
+            <option value="mediumorchid">mediumorchid</option>
             <option value="limegreen">limegreen</option>
           </select>
         </label>
-        <button style={{ backgroundColor: theme }} type="submit">
-          Search
-        </button>
+        <button type="submit">Search</button>
       </form>
       <Results pets={pets} />
     </div>

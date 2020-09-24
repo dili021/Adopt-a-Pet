@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Pet from "./Pet";
+import ThemeContext from "./ThemeContext";
 
 const Results = ({ pets }) => {
+  const [theme] = useContext(ThemeContext);
   return (
-    <div className="search">
-      {!pets.length ? (
-        <h1>No Pets Found</h1>
-      ) : (
+    <div style={{ backgroundColor: theme }} className="search">
+      {pets.length ? (
         pets.map(pet => (
           <Pet
             animal={pet.type}
@@ -18,6 +18,8 @@ const Results = ({ pets }) => {
             id={pet.id}
           />
         ))
+      ) : (
+        <h1>No Pets Found</h1>
       )}
     </div>
   );

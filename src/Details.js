@@ -8,6 +8,7 @@ import Modal from "./Modal";
 
 class Details extends React.Component {
   state = { loading: true, showModal: false };
+
   componentDidMount() {
     pet.animal(this.props.id).then(({ animal }) => {
       this.setState({
