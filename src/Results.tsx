@@ -1,7 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import Pet from "./Pet";
+import { Animal } from "@frontendmasters/pet";
 
-const Results = ({ pets }) => {
+interface IProps {
+  pets: Animal[];
+}
+
+const Results: FC<IProps> = ({ pets }) => {
   return (
     <div className="search">
       {!pets.length ? (
